@@ -1,13 +1,192 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <meta name="description" content="포트폴리오 사이트">
 
+    <link rel="stylesheet" href="http://unpkg.com/ress/dist/ress.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> <!-- 폰트 https://boxicons.com/usage-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">KJW</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu" style="visibility: hidden;">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Work</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class='bx bx-menu'></i>
+        </div>
+      </nav>
+    </header>
+    <main class="1-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">Hi, <br>I'am <span class="home__title-color">Jung Woo</span></h1>
+          <a href="#" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+          <a href="#" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+          <a href="https://github.com/kjungw1025" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+        </div>
+
+        <div class="home__img">
+          <img class="profile" src="img/perfil.jpg" alt="프로필">
+        </div>
+      </section>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="img/about.jpg" alt="about">
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Jung Woo</h2>
+            <p>
+              웹 애플리케이션에서 데이터베이스 설계와 구축, 서버 관리를 하는 백엔드와,<br>
+              데이터 수집 및 분석을 통해 문제 해결 과정을 시각화하여 도출하는 데이터 분석에 대한 매력을 느껴<br>
+              해당 분야들에 대해서 공부하고 있습니다.
+            </p>
+            <br><br><br>
+
+            <h3 class="about__subtitle">현재까지 진행한 프로젝트</h3>
+            <div><b>주식 초보, 주린이를 위한 주식 용어 검색 기능 및 단어장 사이트 (웹)</b></div>
+            <div>- Backend : Django / Frontend : Vue.js</div><br><br>
+            <div><b>강서구 내, 공공 와이파이 추가 설치​를 위한 최적 입지 선정 (데이터 분석)</b></div>
+            <div>- Python</div>
+            <div>- 활용​ 알고리즘 :  K-means / K-medoids / Gaussian Mixture Model / MCLP</div>
+            <br><br><br>
+
+            <h3 class="about__subtitle">알고리즘 공부</h3>
+            <p>
+              코딩 테스트와 문제 해결 능력 향상을 위해 시간 날 때마다<br>
+              알고리즘 공부를 하고 있습니다.<br>
+            </p>
+            <div style="margin-top: 20px;"><a href="https://solved.ac/profile/rlawjddn4706" style="text-decoration: none;" class="button">백준</a></div>
+          </div>
+        </div>
+      </section>
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <!-- <p class="skills__text">문구</p> -->
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-c-plus-plus skills__icon'></i>
+                <span class="skills_name">C++</span>
+              </div>
+              <div>
+                <span class="skills__percentage">70%</span>
+              </div>
+              <div class="skills__bar skills__Cplusplus"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-python skills__icon'></i>
+                <span class="skills_name">Python</span>
+              </div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+              <div class="skills__bar skills__python"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-java skills__icon' ></i>
+                <span class="skills_name">Java</span>
+              </div>
+              <div>
+                <span class="skills__percentage">60%</span>
+              </div>
+              <div class="skills__bar skills__java"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-javascript skills__icon' ></i>
+                <span class="skills_name">JAVASCRIPT</span>
+              </div>
+              <div>
+                <span class="skills__percentage">60%</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bx-data skills__icon'></i>
+                <span class="skills_name">SQL</span>
+              </div>
+              <div>
+                <span class="skills__percentage">60%</span>
+              </div>
+              <div class="skills__bar skills__sql"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-html5 skills__icon'></i>
+                <span class="skills_name">HTML5</span>
+              </div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills_names">
+                <i class='bx bxl-css3 skills__icon'></i>
+                <span class="skills_name">CSS</span>
+              </div>
+              <div>
+                <span class="skills__percentage">55%</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+            </div>
+          </div>
+
+          <div>
+            <img src="img/work3.jpg" alt="" class="skills__img">
+          </div>
+        </div>
+      </section>
+      <!--===== WORK =====-->
+    </main>
+    <!--===== FOOTER =====-->
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
